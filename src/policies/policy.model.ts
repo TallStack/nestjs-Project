@@ -6,7 +6,12 @@ export class Policy {
     title: string,
     description: string,
     price: number,
-  ) {}
+  ) {
+    this.id = id;
+    this.title = title;
+    this.description = description;
+    this.price = price;
+  }
 
   @ApiProperty({ example: '1'})
   public id: string;  
